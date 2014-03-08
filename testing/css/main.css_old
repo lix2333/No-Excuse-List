@@ -1,0 +1,199 @@
+/* CSS RESET */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	outline: 0px;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: top;
+}
+
+/* remember to define focus styles! */
+:focus {outline:none}@charset "utf-8";
+/* CSS Document */
+
+
+/* HTML TAGS
+---------------------------- */
+html, body {height:100%}
+body {background:#fff url(../img/bg.jpg) top left repeat-x; font:normal normal .75em Verdana, Geneva, sans-serif; color:#6d6d6d; height:101%}
+
+h1 {font-size:2em}
+h2 {font-size:1.4em}
+a, .red {color:#FF2A43}
+  a:hover {color:#B81F31}
+strong {font-weight:bold}
+em {font-style:italic}
+p {padding-top:5px; line-height:1.6em}
+	p:first-child {padding-top:0}
+ol, ul {margin:10px 0 0 30px}
+	ol li, ul li {padding:4px 0}
+	ul.full {margin:0}
+	form ul {margin:0}
+
+.left {float:left}
+.right {float:right}
+.small {font-size:.8em}
+.clear {display:block; width:100%; clear:both}
+.faded {color:#aaa; text-decoration:none}
+	a.faded:hover {color:#000}
+.spacer {display:block; padding:10px}
+
+.error {padding:4px; margin:5px auto; display:block; background:#c00; text-align:center; color:#fff; font-weight:bold; line-height:20px}
+.success {padding:4px; margin:5px auto; display:block; background:#1AC91A; text-align:center; color:#fff; font-weight:bold; line-height:20px}
+.tt_box {display:block; width:400px; height:auto; background:#fff; padding:2px; font-size:10px}
+
+/* HEADER
+---------------------------- */
+#mainHeader {width:1000px; height:190px; margin:0 auto; position:relative}
+  #logo {width:163px; height:184px; display:block; background:url(../img/logo.png) top left no-repeat; float:left}
+  #mainNav {width:auto; height:51px; display:block; float:right}
+    #mainNav li {display:inline}
+    #mainNav li a {width:110px; height:51px; line-height:51px; display:block; float:left; color:#aaa; font-size:16px; text-align:center; text-decoration:none; border-right:#3e3e3e 1px solid; border-left:#8d8d8d 1px solid}
+    #mainNav li a:hover, #mainNav li a.selected {background:url(../img/navHover.jpg) top left repeat-x; color:#fff}
+      #mainNav li:first-child a {border-left:none}
+
+	#social {position:absolute; top:54px; right:0}
+		#fb_button {width:16px; height:16px; display:block; background:url(../img/fb_grey.png) top left no-repeat; float:left; margin-right:8px}
+		#twitter_button {width:16px; height:16px; display:block; background:url(../img/twitter_grey.png) top left no-repeat; float:left; margin-right:8px}
+		#google_plus {width:16px; height:16px; display:block; background:url(../img/google_plus_grey.png) top left no-repeat; float:left; margin-right:8px}
+		.pin-it-button {width:16px; height:16px; display:block; background:url(../img/pinterest_grey.png) top left no-repeat; float:left}
+
+  #tagline {position:absolute; top:99px; left:193px; font-size:30px; font-weight:normal}
+
+
+/* COMMON ASSETS
+---------------------------- */
+#container {width:1000px; margin:0 auto; padding-top:20px}
+
+
+/* SEARCH PAGE
+---------------------------- */
+#searchForm {text-align:center}
+	#legend {width:484px; height:20px; display:none; background:url(../img/legend.png) top left no-repeat; margin:0 auto}
+  #searchHolder {width:670px; height:auto; margin:0 auto; position:relative; overflow:visible}
+		#searchHolder .details {font-size:10px; position:relative; top:-10px}
+  #searchField {width:655px; height:20px; display:block; padding:20px 0 20px 15px; display:block; margin:0 auto; background:#F6F6F6; border:#C8C8C8 3px solid;
+								color:#595959; font-size:20px; position:relative; z-index:2;
+                border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px}
+  #searchSubmit {width:60px; height:60px; display:block; background:url(../img/search.png) center center no-repeat; border:none; text-indent:-9999px; position:absolute; top:3px; right:-3px; z-index:2; cursor:pointer;
+                border-left:#f6f6f6 1px solid; border-radius:0 8px 8px 0; -moz-border-radius:0 8px 8px 0; -webkit-border-radius:0 8px 8px 0}
+    #searchSubmit:hover {background-color:#fff; border-left:#ccc 1px solid}
+  #searchForm p {width:650px; text-align:left; margin:0 auto; padding-top:3px}
+
+  #results {width:674px; position:absolute; top:50px; left:0; background:#fff; border:#c8c8c8 1px solid; padding:20px 0 10px; margin:0; display:none}
+		#results.full {width:1000px; display:block; position:relative; top:0; border:none}
+    h3.red {padding:5px 0; display:block; text-align:center; font-size:14px; background:url(../img/red.jpg) center left repeat-x; clear:both}
+      h3.red span {background:#fff; padding:0 10px}
+      h3.red a {color:#B81F31}
+      h3.red a:hover {color:#FF2A43}
+    .result {list-style-type:none; height:60px; padding:10px 0 0; display:block; clear:both}
+      .love {width:60px; height:60px; display:block; float:left; line-height:67px; color:#595959; text-decoration:none; position:relative; text-align:center}
+				.love span {width:15px; height:13px; display:block; background:url(../img/heart.png) top left no-repeat; position:absolute; top:6px; left:23px}
+      .result h4 {color:#595959; font-size:18px; text-align:left; float:left}
+      #results .result p {color:#C8C8C8; font-size:14px; text-align:left; float:left; display:block; width:600px}
+			#results.full .result p.blurb {width:900px; padding-top:0; position:relative; top:-3px}
+			#results.full .result p.details {width:900px; padding-top:0; font-size:10px; position:relative; top:-9px}
+				/* #results.full .result:hover p.details a {color:#fff}
+    ul .result:hover {background:#FF2A43; cursor:pointer; color:#fff}
+      ul .result:hover .love, #results .result:hover h4, #results .result:hover p {color:#fff}
+			ul .result:hover .love span {background-position:bottom left} */
+		.icon {width:15px; height:15px; display:block; float:left; position:relative; top:4px; left:4px}
+			.icon.inline {top:0; left:0}
+			.paid {background:url(../img/paid.png) top left no-repeat}
+			.recommended {background:url(../img/recommended.png) top left no-repeat}
+
+		.tags {display:block; list-style-type:none; clear:both}
+			.tags a {display:block; float:left; background:#F6F6F6; color:#595959; text-decoration:none; padding:5px; margin:0 5px 5px 5px; font-size:14px}
+			.tags a:hover {background:#595959; color:#f6f6f6}
+
+
+/* LOGIN AND FORMS
+---------------------------- */
+	.inputtext, .textarea {background:#fff; border:#777 1px solid; padding:2px}
+		.inputtext.disabled {background:#f6f6f6; color:#aaa; border-color:#aaa}
+		.textarea {width:263px; height:100px; font-family:verdana, sans-serif}
+		select {width:270px}
+	.button {background:#fff; border:#555 1px solid; border-radius:7px; -moz-border-radius:7px; -webkit-border-radius:7px}
+	#form {width:634px; display:block; margin:0 auto; padding:20px; background:#eee; overflow:auto;
+							border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; border:#777 1px solid}
+		#form.clearForm {width:100%; background:transparent; border:none; float:left; margin:20px 0 0; padding:20px 0 0; border-top:#ccc 1px solid;
+											border-radius:0; -moz-border-radius:0; -webkit-border-radius:0}
+		#form label {width:170px; display:block; float:left; clear:both; line-height:30px; position:relative}
+			#form label span {position:absolute; top:20px; left:0; font-size:9px; line-height:12px}
+		#form .inputtext {padding:6px; width:255px; float:left; margin-right:15px}
+		.button {padding:6px; color:#fff; box-shadow:2px 2px 4px #ccc; letter-spacing:1px; float:left; text-decoration:none;
+							position:relative; left:-2px; cursor:pointer;
+							background: #ff2a43;
+							background: -moz-linear-gradient(top,  #ff2a43 0%, #b81f31 100%);
+							background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff2a43), color-stop(100%,#b81f31));
+							background: -webkit-linear-gradient(top,  #ff2a43 0%,#b81f31 100%);
+							background: -o-linear-gradient(top,  #ff2a43 0%,#b81f31 100%);
+							background: -ms-linear-gradient(top,  #ff2a43 0%,#b81f31 100%);
+							background: linear-gradient(to bottom,  #ff2a43 0%,#b81f31 100%);
+							filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff2a43', endColorstr='#b81f31',GradientType=0 );
+		}
+			.button:hover {background:#FF2A43; color:#fff; box-shadow:1px 1px 0 #ccc}
+		#loginSubtext {width:634px; margin:0 auto}
+
+
+/* EVERYTHING LIST
+---------------------------- */
+	.list {width:320px; background:#eee; float:left; margin:0 0 50px 10px}
+		.list h3 {height:10px; margin-bottom:15px; border:#777 1px solid; border-width:1px 1px 0; position:relative; text-align:center}
+		.list h3 span {padding:6px; background:#fff; position:relative; top:-15px; border-bottom:#777 1px solid; font-size:20px}
+		.list .result {height:auto; text-indent:10px; padding:10px 0}
+		.list .result:nth-child(odd) {background:#f6f6f6}
+		/* .list .result:nth-child(odd):hover {background:#FF2A43} */
+		.list .icon {top:0}
+		.list ul {margin:0}
+		.list div {padding:2px 0 0 14px}
+
+/* SUBLINK STYLE
+---------------------------- */
+	#subLinks {border-bottom:#333 1px solid; padding:0 0 5px; margin:0 0 10px}
+		#subLinks a {padding:5px; color:#777; text-decoration:none}
+		#subLinks a:hover {color:#000}
+		#subLinks a#current {color:#000; cursor:default}
+
+/* DISCUSSIONS
+---------------------------- */
+	/* START A THREAD */
+		#form.startThread {width:455px; margin:0}
+			#form.startThread h2 {padding-bottom:5px}
+		.pages {padding:10px 0 30px; display:block; overflow:auto}
+			.pages a {margin:0 3px}
+
+	#resultTitle {position:relative}
+	#resultTitle.result {height:auto}
+		#resultTitle p {width:1000px; position:absolute; top:34px; left:60px; padding:0}
+
+	.addComment {clear:both; padding-bottom:5px; overflow:auto}
+		.addComment textarea {width:600px; height:100px}
+		.addComment .button {margin-left:5px}
+		.spamChecker {position:absolute; top:-9999px; left:-9999px}
+
+	#resultTitle .love span {background:url(../img/heartColor.png) top left no-repeat}
+		#resultTitle .love.loved span {background-position:bottom center}
+
+	#comments {display:block; padding:30px 0; clear:both}
+		#comments ul {margin:0 0 0 10px; list-style-type:none; border-left:#ccc 1px solid; padding-left:10px}
+		#comments ul.top {margin:10px 0 0; border-left:none; padding-left:0}
+		#comments ul.top:first-child {margin:0}
+			#comments ul li {padding:6px 0 10px}
+			.details {position:relative; top:-6px; font-size:.8em}
+			.comment {padding:0 0 2px 0}
+			.collapse {width:20px; display:block; float:left}
+			.hideComments {height:14px; overflow:hidden}
+			.tools a {margin-right:7px}
+			.tools.noPad a {margin:0}
